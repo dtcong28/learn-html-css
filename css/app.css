@@ -56,8 +56,59 @@ body {
   font-weight: 400;
 }
 
+.button {
+  display: inline-block;
+  padding: 13px 45px;
+  border-radius: 100rem;
+  font-family: "Rubik", sans-serif;
+  line-height: 1;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+.button--primary {
+  font-weight: 700;
+  background-color: #F53838;
+  color: white;
+}
+.button--outline {
+  background-color: transparent;
+  color: #F53838;
+  font-weight: 500;
+  border: 1px solid;
+}
+.button--rounded {
+  border-radius: 10px;
+  padding: 17px 65px;
+  box-shadow: 0 30px 54px -5px rgba(245, 56, 56, 0.35);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #0B132A;
+  font-weight: bold;
+}
+
+.heading {
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 1.4285714286;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+}
+
+.text {
+  line-height: 1.875;
+}
+
 .header {
   padding-top: 50px;
+  padding-bottom: 90px;
 }
 .header-container {
   display: flex;
@@ -90,6 +141,94 @@ body {
 }
 .menu-link {
   color: inherit;
+}
+
+.hero {
+  padding-bottom: 100px;
+}
+.hero-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0 40px;
+  position: relative;
+}
+.hero-content {
+  width: 100%;
+  max-width: 555px;
+}
+.hero-image {
+  position: absolute;
+  top: 50%;
+  transform: translate(40px, -50%);
+  right: 0;
+}
+.hero-heading {
+  font-size: 50px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  line-height: 1.4;
+  color: #0B132A;
+}
+.hero-desc {
+  line-height: 1.875;
+  margin-bottom: 50px;
+}
+.hero-desc strong {
+  font-weight: 500;
+}
+
+.intro {
+  margin-bottom: 95px;
+}
+.intro-container {
+  background: #fff;
+  border-radius: 10px;
+  padding: 37px 0;
+  box-shadow: 0 42px 114px 0 rgba(13, 16, 37, 0.064);
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  min-height: 200px;
+}
+.intro-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0 36.5px;
+  font-size: 20px;
+}
+.intro-item:nth-child(2) {
+  border-left: 2px solid #eeeff2;
+  border-right: 2px solid #eeeff2;
+}
+.intro-title {
+  font-size: 25px;
+  margin-bottom: 5px;
+  line-height: 1.2;
+}
+.intro-text {
+  line-height: 1.5;
+}
+
+.feature {
+  padding-bottom: 130px;
+}
+.feature-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 0 170px;
+}
+.feature-desc {
+  margin-bottom: 23px;
+}
+.feature-list {
+  list-style-type: none;
+}
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: 0 10px;
 }
 
 /*# sourceMappingURL=app.css.map */

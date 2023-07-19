@@ -3,3 +3,5 @@
 - Short hand
     + .wrapper
     + .header.header 
+
+- Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
